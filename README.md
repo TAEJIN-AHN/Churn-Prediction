@@ -50,5 +50,5 @@
 * 데이터셋의 크기가 29GB에 달하여 데이터를 모두 메모리에 올리는 Pandas를 이용할 수 없었고, 병렬, 분산처리를 위해 Pyspark를 사용함
 
 #### **B.2.2. 데이터 샘플링**
-
+<p align = "center"><img src = "https://github.com/TAEJIN-AHN/Churn-Prediction/assets/125945387/aa8d9942-e9ee-45ac-ae01-c0062dbfe3ad" width = 40% height = 40%></p>
 * 서비스 사용 기록, 
