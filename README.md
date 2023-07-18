@@ -5,8 +5,8 @@
 * B. 프로젝트 진행
   * B.1. 문제 정의
   * B.2. 주요 액션
-    * B.2.1. 데이터 로드 [관련 코드](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/789ffb07f1dc69de8042964ffa097bc8296b2996/data_load_sampling.ipynb)
-    * B.2.2. 데이터 샘플링 [관련 코드](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/789ffb07f1dc69de8042964ffa097bc8296b2996/data_load_sampling.ipynb)
+    * B.2.1. 데이터 로드 - [관련 코드](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/789ffb07f1dc69de8042964ffa097bc8296b2996/data_load_sampling.ipynb)
+    * B.2.2. 데이터 샘플링 - [관련 코드](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/789ffb07f1dc69de8042964ffa097bc8296b2996/data_load_sampling.ipynb)
     * B.2.3. EDA - 관련 코드
     * B.2.4. 데이터 전처리 - 관련 코드
     * B.2.5. 모델링 - 관련 코드
