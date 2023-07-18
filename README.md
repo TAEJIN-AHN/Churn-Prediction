@@ -50,5 +50,8 @@
 * 데이터셋의 크기가 29GB에 달하여 데이터를 모두 메모리에 올리는 Pandas를 이용할 수 없었고, 병렬, 분산처리를 위해 Pyspark를 사용함
 
 #### **B.2.2. 데이터 샘플링**
-<p align = "center"><img src = "https://github.com/TAEJIN-AHN/Churn-Prediction/assets/125945387/aa8d9942-e9ee-45ac-ae01-c0062dbfe3ad" width = 40% height = 40%></p>
-* 서비스 사용 기록, 
+
+* 서비스 사용 기록, 이탈 여부, 구매 기록, 인적정보를 모두 알 수 있는 고객은 전체 중 일부이며, 상당 수의 고객은 1개 이상의 정보가 누락되어 있음
+* 각 데이터가 담고 있는 고객 집합을 벤 다이어그램으로 나타내면 다음과 같음
+  ① 이탈 여부, 구매 기록을
+<p align = "center"><img src = "https://github.com/TAEJIN-AHN/Churn-Prediction/assets/125945387/9f1650d8-79c4-401c-b1eb-fea42b17fdb2" width = 50% height = 50%></p>
