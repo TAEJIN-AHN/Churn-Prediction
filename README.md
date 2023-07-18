@@ -24,37 +24,59 @@
 * 2017년 Kaggle에서 진행된 [KKBox's Churn Prediction Challenge](https://www.kaggle.com/competitions/kkbox-churn-prediction-challenge/overview/description)에서 제공된 대만 유명 음원 스트리밍 서비스 KKBox 유저 데이터를 사용함
 * 데이터셋은 아래와 같이 크게 4가지 유형의 데이터로 구분되어 있음
   
-  <table>
-     <tr>
-      <td><p align = 'center'>데이터 유형</p></td>
-      <td><p align = 'center'>데이터 내용</p></td>
-     </tr>
-    <tr>
-     <td><p align = 'center'>고객 인적정보</p></td>
-     <td><p align = 'left'>각 유저의 인구통계학적 정보 (성별, 나이 등)</p></td>     
-    </tr>
-     <tr>
-     <td><p align = 'center'>서비스 사용 기록</p></td>
-     <td><p align = 'left'>각 유저의 일별 스트리밍 서비스 사용 기록 (재생 곡수, 시간 등)</p></td>  
-    </tr> 
-     <tr>
-     <td><p align = 'center'>서비스 구매 기록</p></td>
-     <td><p align = 'left'>각 유저의 서비스 구매 기록 (지불 금액, 멤버십 유지 기간 등)</p></td>    
-    </tr> 
-     <tr>
-     <td><p align = 'center'>이탈 여부</p></td>
-     <td><p align = 'left'>각 유저의 서비스 이탈※ 여부</p></td>     
-    </tr> 
-  </table>
-  ※ 본 데이터에서는 멤버십 만료 후 30일 이내에 추가적인 서비스 구매 이력이 없는 유저를 '이탈'했다고 규정함
+<table align = "center">
+ <tr>
+  <td><p align = 'center'>데이터 유형</p></td>
+  <td><p align = 'center'>데이터 내용</p></td>
+ </tr>
+ <tr>
+  <td><p align = 'center'>고객 인적정보</p></td>
+  <td><p align = 'left'>각 유저의 인구통계학적 정보 (성별, 나이 등)</p></td>     
+ </tr>
+ <tr>
+  <td><p align = 'center'>서비스 사용 기록</p></td>
+  <td><p align = 'left'>각 유저의 일별 스트리밍 서비스 사용 기록 (재생 곡수, 시간 등)</p></td>  
+ </tr> 
+ <tr>
+  <td><p align = 'center'>서비스 구매 기록</p></td>
+  <td><p align = 'left'>각 유저의 서비스 구매 기록 (지불 금액, 멤버십 유지 기간 등)</p></td>    
+ </tr>
+ <tr>
+  <td><p align = 'center'>이탈 여부</p></td>
+  <td><p align = 'left'>각 유저의 서비스 이탈※ 여부</p></td>     
+ </tr> 
+</table>  
+
+<p align = "center" >※ 본 데이터에서는 멤버십 만료 후 30일 이내에 추가적인 서비스 구매 이력이 없는 유저를 '이탈'했다고 규정함</p><br>
+
 * 데이터셋의 크기가 29GB에 달하여 데이터를 모두 메모리에 올리는 Pandas를 이용할 수 없었고, 병렬, 분산처리를 위해 Pyspark를 사용함
 
 #### **B.2.2. 데이터 샘플링**
 
 * 서비스 사용 기록, 이탈 여부, 구매 기록, 인적정보를 모두 알 수 있는 고객은 전체 중 일부이며, 상당 수의 고객은 1개 이상의 정보가 누락되어 있음
 * 각 데이터가 담고 있는 고객 집합을 벤 다이어그램으로 나타내면 다음과 같음
-<p align = "center"><img src = "https://github.com/TAEJIN-AHN/Churn-Prediction/assets/125945387/9f1650d8-79c4-401c-b1eb-fea42b17fdb2" width = 50% height = 50%></p>
+<p align = "center"><img src = "https://github.com/TAEJIN-AHN/Churn-Prediction/assets/125945387/dcc4821b-a0da-47ad-ac49-286d0d52cc93" width = 50% height = 50%></p>
 
-```
-①
-```
+<table align = "center">
+ <tr>
+  <td><p align = 'center'>집합 번호</p></td>
+  <td><p align = 'center'>상세 내용</p></td>
+ </tr>
+ <tr>
+  <td><p align = 'center'>①</p></td>
+  <td><p align = 'left'> 이탈 여부, 구매기록은 알 수 있으나, 서비스 사용 기록과 인적 정보는 알 수 없음 (120,726명)</p></td>     
+ </tr>
+ <tr>
+  <td><p align = 'center'>②</p></td>
+  <td><p align = 'left'>이탈 여부, 구매 기록, 서비스 사용 기록은 알 수 있으나, 인적 정보는 알 수 없음 (33명) </p></td>  
+ </tr> 
+ <tr>
+  <td><p align = 'center'>③</p></td>
+  <td><p align = 'left'>이탈 여부, 구매 기록, 인적 정보는 알 수 있으나, 서비스 사용 기록은 알 수 없음 (6,305명) </p></td>    
+ </tr>
+ <tr>
+  <td><p align = 'center'>④</p></td>
+  <td><p align = 'left'>4개 정보를 모두 알 수 있음 (955,126명) </p></td>     
+ </tr> 
+</table>  
+
