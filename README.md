@@ -83,3 +83,77 @@
 
 * 이탈에 영향을 미치는 특성을 최대한 파악하기 위해, 4개 데이터를 모두 사용할 수 있는 ④번 그룹 (955,126명)에 한하여 프로젝트를 수행함
 * 또한, 팀원 개개인의 컴퓨팅 파워(로컬 기준)를 고려하여 ④번 그룹 95만명 중 대략 10만명 가량의 데이터를 샘플링하여 사용함
+
+#### **EDA**
+
+* 자세한 내용과 코드는 [링크](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/2745414da82c974467b132cad6f9aee320595930/eda.ipynb)를 참고해주시기 바랍니다.
+* EDA를 통해 확인한 내용은 다음과 같음
+  * 인사이트 관련
+    
+<table align = 'center'>
+ <tr>
+     <th>데이터 유형</th>
+     <th>EDA 내용</th>
+ <tr>
+     <td rowspan = '3' valign = 'center' align = 'center'>인적 정보</td>
+     <td>최근에 가입한 유저일 수록 이탈율이 높음</td>
+ </tr>
+ <tr>
+     <!--<td>인적 정보</td>-->
+     <td>10대 후반 ~ 20대 초반의 사용자가 타 연령대에 비해 이탈율이 높음</td>
+ </tr>
+ <tr>
+     <!--<td>인적 정보</td>-->
+     <td>가입 경로에 따라 이탈율에 큰 차이를 보임</td>
+ </tr>
+ <tr>
+     <td rowspan = '2' valign = 'center' align = 'center'>사용 기록</td>
+     <td>사용 기록이 많은 고객일 수록 이탈율이 낮음</td>
+ </tr>
+ <tr>
+     <!--<td>사용 기록</td>-->
+     <td>이탈 유저의 경우 장기간 미접속 경험 비율이 높음</td>
+ </tr>
+ <tr>
+     <td rowspan = '4'  valign = 'center' align = 'center'>구매 기록</td>
+     <td>고객이 선택하는 결제 수단에 따라 이탈율의 편차가 큼</td>
+ </tr>
+ <tr>
+     <!--<td>구매 기록</td>-->
+     <td>이탈 유저는 구독 자동 갱신 횟수가 적음</td>
+ </tr>
+ <tr>
+     <!--<td>구매 기록</td>-->
+     <td>구독 유지 기간이 길수록 이탈율은 낮아짐</td>
+ </tr>
+ <tr>
+     <!--<td>구매 기록</td>-->
+     <td>가입 이후 결제 방식을 변경한 고객의 이탈율이 더 높음</td>
+ </tr>
+</table>
+
+  * 전처리 및 스케일링 관련
+
+<table align = 'center'>
+    <tr>
+        <th>데이터 유형</th>
+        <th>EDA 내용</th>
+    <tr>
+        <td valign = 'center' align = 'center'>공통</td>
+        <td >이탈 잔존 유저의 구성 비율이 불균형함</td>
+    </tr>
+    <tr>
+        <td valign = 'center' align = 'center'>인적 정보</td>
+        <td>성별, 나이 데이터에 결측치, 이상치가 다수 존재함</td>
+    </tr>
+    <tr>
+        <td valign = 'center' align = 'center'>사용 기록</td>
+        <td>음원 재생 관련 데이터에 이상치가 다수 존재함</td>
+    </tr>
+    <tr>
+        <td valign = 'center' align = 'center'>구매 기록</td>
+        <td>거래 일자와 구독 만료일 데이터에 이상치가 발견됨</td>
+    </tr>
+    </tr>
+</table>
+
