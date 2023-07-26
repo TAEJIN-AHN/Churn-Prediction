@@ -333,7 +333,7 @@
     * min_child_samples : 20
     * n_estimators : 50,
     * num_leaves : 248
-  * 최종 성능
+  * **최종 성능**
     * Test Recall : 0.4449 -> **0.4912** (+ 0.0463, 기존 대비 약 10% 상승)
     * Test Precision : 0.7496 -> **0.7389** (- 0.0107, 기존 대비 약 1% 하락)
  
