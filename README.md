@@ -11,10 +11,8 @@
     * B.2.4. 데이터 전처리 - [관련 코드](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/372f5aefe36c5ecca9483f50309ae3aecbbffb92/preprocessing_modeling.ipynb)
     * B.2.5. 모델링 - [관련 코드](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/372f5aefe36c5ecca9483f50309ae3aecbbffb92/preprocessing_modeling.ipynb)
     * B.2.6. 이탈 확률 구간별 LTV 계산 - [관련 코드](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/3113a2361365c466caebec09f3c7c67ff66ae9e2/LTV_calculation.ipynb)
-
-  * B.3. 결과
-* C. Deck
-* D. Methods Used
+  * B.3. 결과 및 기대효과
+* C. Methods Used
 ---
 ## **B. 프로젝트 진행**
 ### **B.1. 문제 정의**
@@ -435,3 +433,7 @@
   <td align = 'center'>63</td>
  </tr>
 </table>
+
+## **C. 결과 및 기대효과**
+* Test Precision이 0.74, Test Recall이 0.49인 이탈 유저 분류 모델을 개발하였음
+* 본 모델을 활용하여 이탈 확률에 따라 고객을 세분화하고, 그룹별로 LTV를 산정하여 수익성을 해치지 않는 고객 유지 비용 지출이 어느 정도인지를 확인할 수 있음  
