@@ -157,3 +157,183 @@
     </tr>
 </table>
 
+#### **B.2.4. 전처리**
+* 자세한 내용과 코드는 [링크](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/372f5aefe36c5ecca9483f50309ae3aecbbffb92/preprocessing_modeling.ipynb)를 참고해주시기 바랍니다.
+* EDA 결과에 따라 아래와 같이 전처리를 수행함
+  * **구매 기록**
+    * 거래 일자가 중복되는 데이터는 가장 마지막만 남김
+    * 멤버십 만료일자가 KKBox 서비스 시작연도 이전이거나 <br>데이터 공개시점인 2017년 3월 30일로부터 1년 1개월※이후인 경우는 제외 <br>(최대 1년 단위 구독 가능 + 30일 무료 체험기간)
+  * **인적 정보**
+    * 아래의 사유로 인해 정보의 신뢰도가 낮다고 판단되는 성별, 나이 데이터는 제외
+      * 결측치 혹은 이상치의 비중이 높음
+      * 고객이 직접 입력할 뿐 별도의 인증절차가 요구되지 않음
+  * **사용 기록**
+    * 일일 총 재생시간이 음수이거나 하루(24시간 * 60분 * 60초)를 넘어서는 데이터는 삭제
+    * Boxplot 전개 시 확인되는 재생 음원 수의 이상치 데이터 삭제 (IQR 활용)
+
+#### **B.2.5. 모델링**
+* 자세한 내용과 코드는 [링크](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/372f5aefe36c5ecca9483f50309ae3aecbbffb92/preprocessing_modeling.ipynb)를 참고해주시기 바랍니다.
+* 모델링에 사용한 입력 변수는 다음과 같음<br>
+<table align = 'center'>
+  <tr>
+    <th valign = 'center' align = 'center'>종류</th>
+    <th valign = 'center' align = 'center'>변수명</th>
+    <th valign = 'center' align = 'center'>내용</th>
+  </tr>
+  <tr>
+    <td rowspan = '6' valign = 'center' align = 'center'>구매 기록</td>
+    <td>in_membership_days</td>
+    <td>멤버십을 유지한 기간</td>
+  </tr>
+  <tr>
+    <!--<td rowspan = '6' valign = 'center' align = 'center'>구매 기록</td>-->
+    <td>is_cancel</td>
+    <td>구독을 취소한 경험의 유무</td>
+  </tr>
+  <tr>
+    <!--<td rowspan = '6' valign = 'center' align = 'center'>구매 기록</td>-->
+    <td>is_auto_renew</td>
+    <td>자동 구독 이용 여부 <br> (전체 구매 중에서 자동 구독의 비율이 50% 이상인 경우 참)</td>
+  </tr>
+  <tr>
+    <!--<td rowspan = '6' valign = 'center' align = 'center'>구매 기록</td>-->
+    <td>discount</td>
+    <td>할인 받은 구독 거래의 횟수</td>
+  </tr>
+  <tr>
+    <!--<td rowspan = '6' valign = 'center' align = 'center'>구매 기록</td>-->
+    <td>is_method_change</td>
+    <td>가입 후 결제수단을 변경한 이력의 유무</td>
+  </tr>
+  <tr>
+    <!--<td rowspan = '6' valign = 'center' align = 'center'>구매 기록</td>-->
+    <td>pri_payment_method</td>
+    <td>가입 후 가장 자주 사용한 결제수단</td>
+  </tr>
+  <tr>
+    <td rowspan = '4' valign = 'center' align = 'center'>인적 정보</td>
+    <td>city</td>
+    <td>이용자 거주 도시</td>
+  </tr>
+  <tr>
+    <!--<td rowspan = '4' valign = 'center' align = 'center'>인적 정보</td>-->
+    <td>register_via</td>
+    <td>서비스 가입 경로</td>
+  </tr>
+  <tr>
+    <!--<td rowspan = '4' valign = 'center' align = 'center'>인적 정보</td>-->
+    <td>register_init_time</td>
+    <td>최초 가입 연도</td>
+  </tr>
+  <tr>
+    <!--<td rowspan = '4' valign = 'center' align = 'center'>인적 정보</td>-->
+    <td>after_regit_to_buy</td>
+    <td>가입 후 최초 구입까지 걸린 시간 (일)</td>
+  </tr>
+  <tr>
+    <td rowspan = '6' valign = 'center' align = 'center'>사용 기록</td>
+    <td>per_25</td>
+    <td>25% 이하 감상한 노래의 비율</td>
+  </tr>
+  <tr>
+    <!--<td rowspan = '6' valign = 'center' align = 'center'>사용 기록</td>-->
+    <td>per_25_75</td>
+    <td>25~75% 감상한 노래의 비율</td>
+  </tr>
+  <tr>
+    <!--<td rowspan = '6' valign = 'center' align = 'center'>사용 기록</td>-->
+    <td>per_100</td>
+    <td>75% 이상 감상한 노래의 비율</td>
+  </tr>
+  <tr>
+    <!--<td rowspan = '6' valign = 'center' align = 'center'>사용 기록</td>-->
+    <td>seconds_per_song</td>
+    <td>총 재생시간 / 사용자가 재생한 음악의 수</td>
+  </tr>
+  <tr>
+    <!--<td rowspan = '6' valign = 'center' align = 'center'>사용 기록</td>-->
+    <td>mean_seconds</td>
+    <td>평균 노래 재생시간</td>
+  </tr>
+  <tr>
+    <!--<td rowspan = '6' valign = 'center' align = 'center'>사용 기록</td>-->
+    <td>max_log_term</td>
+    <td>최장 미접속 기간</td>
+  </tr>
+</table>
+
+* 분류 알고리즘, 스케일링※ 여부, 리샘플링 사용 등 경우의 수를 72가지로 나누어 각각 모델링을 수행하고 평가함 (※ Standard Scaler 사용)
+
+<table align = 'center'>
+ <tr>
+  <th>채택</th>
+  <th>스케일링</th>
+  <th>변수선택 및 추출</th>
+  <th>리샘플링</th>
+  <th>알고리즘</th>
+  <th>Test Recall</th>
+  <th>Test Precision</th>
+  <th>과적합 정도(Precision)</th>
+ </tr>
+ <tr>
+  <td align = 'center'>★</td>
+  <td align = 'center'>사용함</td>
+  <td align = 'center'>사용하지 않음</td>
+  <td align = 'center'>사용하지 않음</td>
+  <td align = 'center'>LGBM</td>
+  <td align = 'center'>0.4449</td>
+  <td align = 'center'>0.7496</td>
+  <td align = 'center'>0.0136</td>
+ </tr>
+ <tr>
+  <td align = 'center'>-</td>
+  <td align = 'center'>사용하지 않음</td>
+  <td align = 'center'>사용하지 않음</td>
+  <td align = 'center'>사용하지 않음</td>
+  <td align = 'center'>LGBM</td>
+  <td align = 'center'>0.4453</td>
+  <td align = 'center'>0.7487</td>
+  <td align = 'center'>0.0158</td>
+ </tr>
+ <tr>
+  <td align = 'center'>-</td>
+  <td align = 'center'>사용하지 않음</td>
+  <td align = 'center'>사용하지 않음</td>
+  <td align = 'center'>사용하지 않음</td>
+  <td align = 'center'>CATBOOST</td>
+  <td align = 'center'>0.4877</td>
+  <td align = 'center'>0.7350</td>
+  <td align = 'center'>0.0621</td>
+ </tr>
+ <tr>
+  <td align = 'center'>-</td>
+  <td align = 'center'>사용함</td>
+  <td align = 'center'>사용하지 않음</td>
+  <td align = 'center'>사용하지 않음</td>
+  <td align = 'center'>XGBOOST</td>
+  <td align = 'center'>0.4748</td>
+  <td align = 'center'>0.7321</td>
+  <td align = 'center'>0.0542</td>
+ </tr>
+ <tr>
+  <td align = 'center'>-</td>
+  <td align = 'center'>사용하지 않음</td>
+  <td align = 'center'>사용하지 않음</td>
+  <td align = 'center'>사용하지 않음</td>
+  <td align = 'center'>XGBOOST</td>
+  <td align = 'center'>0.4748</td>
+  <td align = 'center'>0.7321</td>
+  <td align = 'center'>0.0542</td>
+ </tr>
+</table>
+
+* Average-Precision을 기준하여 모델을 선정, 아래와 같은 성능 변화가 확인됨
+  * 하이퍼 파라미터
+    * learning_rate : 0.1,
+    * min_child_samples : 20
+    * n_estimators : 50,
+    * num_leaves : 248
+  * 성능 변화
+    * Test Recall : 0.4449 -> 0.4912 (+ 0.0463, 기존 대비 약 10% 상승)
+    * Test Precision : 0.7496 -> 0.7389 (- 0.0107, 기존 대비 약 1% 하락)
+ 
