@@ -359,7 +359,7 @@
  <tr>
   <th>이탈 확률(%)</th>
   <th>총 유저수(명)</th>
-  <th>이탈 유저의 비율(명)</th>
+  <th>이탈 유저의 비율(%)</th>
   <th>ARPU(NTD)</th>
   <th>LTV(NTD)</th>
  </tr>
