@@ -157,7 +157,7 @@
     </tr>
 </table>
 
-#### **B.2.4. 전처리**
+#### **B.2.4. 데이터 전처리**
 * 자세한 내용과 코드는 [링크](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/62ffff6dffe22a057bba0c35e42c2323176e6213/data_load_sampling.ipynb)를 참고해주시기 바랍니다.
 * EDA 결과에 따라 아래와 같이 전처리를 수행함
   * **구매 기록**
@@ -442,7 +442,7 @@
 
 ---
 
-## **D. Method Used**
+## **D. Methods Used**
 * 모델
   * LightGBM
   * CatBoost
