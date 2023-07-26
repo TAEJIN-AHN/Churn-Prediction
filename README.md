@@ -441,3 +441,20 @@
 * 본 모델을 활용하여 이탈 확률에 따라 고객을 세분화하고, 그룹별로 LTV를 산정하여 수익성을 해치지 않는 고객 유지 비용 지출이 어느 정도인지를 확인할 수 있음  
 
 ---
+
+## **D. Method Used**
+* 모델
+  * LightGBM
+  * CatBoost
+  * XGBoost
+* 시각화
+  * matplotlib
+  * seaborn 
+* 데이터 전처리
+  * pyspark
+  * pandas
+  * numpy
+  * sklearn
+* 개발 환경
+  * colab
+  * python
