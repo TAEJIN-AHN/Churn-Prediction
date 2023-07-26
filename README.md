@@ -354,6 +354,7 @@
   
   $$LTV = \frac{ARPU}{그룹별\,실제\,이탈유저의\,비율}$$
 
+<br>
 <table align = 'center'>
  <tr>
   <th>이탈 확률(%)</th>
