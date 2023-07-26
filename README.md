@@ -22,6 +22,7 @@
 
 ### **B.2. 주요 액션**
 #### **B.2.1. 데이터 로드**
+* 자세한 내용과 코드는 [링크](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/789ffb07f1dc69de8042964ffa097bc8296b2996/data_load_sampling.ipynb)를 참고해주시기 바랍니다.
 * 2017년 Kaggle에서 진행된 [KKBox's Churn Prediction Challenge](https://www.kaggle.com/competitions/kkbox-churn-prediction-challenge/overview/description)에서 제공된 대만 유명 음원 스트리밍 서비스 KKBox 유저 데이터를 사용함
 * 데이터셋은 아래와 같이 크게 4가지 유형의 데이터로 구분되어 있음
   
@@ -53,7 +54,7 @@
 * 데이터셋의 크기가 29GB에 달하여 데이터를 모두 메모리에 올리는 Pandas를 이용할 수 없었고, 병렬, 분산처리를 위해 Pyspark를 사용함
 
 #### **B.2.2. 데이터 샘플링**
-
+* 자세한 내용과 코드는 [링크](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/789ffb07f1dc69de8042964ffa097bc8296b2996/data_load_sampling.ipynb)를 참고해주시기 바랍니다.
 * 서비스 사용 기록, 이탈 여부, 구매 기록, 인적정보를 모두 알 수 있는 고객은 전체 중 일부이며, 상당 수의 고객은 1개 이상의 정보가 누락되어 있음
 * 각 데이터가 담고 있는 고객 집합을 벤 다이어그램으로 나타내면 다음과 같음
 <p align = "center"><img src = "https://github.com/TAEJIN-AHN/Churn-Prediction/assets/125945387/dcc4821b-a0da-47ad-ac49-286d0d52cc93" width = 50% height = 50%></p>
