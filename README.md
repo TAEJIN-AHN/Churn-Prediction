@@ -273,7 +273,7 @@
   <th>알고리즘</th>
   <th>Test Recall</th>
   <th>Test Precision</th>
-  <th>과적합 정도※</th>
+  <th>과적합※</th>
  </tr>
  <tr>
   <td align = 'center'>★</td>
@@ -327,7 +327,7 @@
  </tr>
 </table>
 
-<p align = 'center'>※ 과적합 정도 : Test Precision과 Train Precision의 차</p>
+<p align = 'center'>※ 과적합 : Test Precision과 Train Precision의 차</p>
 
 * Average-Precision을 기준하여 모델을 선정, 아래와 같은 성능 변화가 확인됨
   * 하이퍼 파라미터
