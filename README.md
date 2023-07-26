@@ -10,7 +10,7 @@
     * B.2.3. EDA - [관련 코드](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/2745414da82c974467b132cad6f9aee320595930/eda.ipynb)
     * B.2.4. 데이터 전처리 - [관련 코드](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/372f5aefe36c5ecca9483f50309ae3aecbbffb92/preprocessing_modeling.ipynb)
     * B.2.5. 모델링 - [관련 코드](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/372f5aefe36c5ecca9483f50309ae3aecbbffb92/preprocessing_modeling.ipynb)
-    * B.2.6. 고객 등급화 - 관련 코드
+    * B.2.6. 이탈 확률 구간별 LTV 계산 - 관련 코드
   * B.3. 결과
 * C. Deck
 * D. Methods Used
@@ -340,4 +340,96 @@
   * **최종 성능**
     * Test Recall : 0.4449 -> **0.4912** (+ 0.0463, 기존 대비 약 10% 상승)
     * Test Precision : 0.7496 -> **0.7389** (- 0.0107, 기존 대비 약 1% 하락)
- 
+
+#### **B.2.5. 이탈 확률 구간별 LTV 계산** 
+
+* 채택된 모델을 적용하여 각 유저별 이탈 확률을 구하고 10% 간격으로 묶어 실제 이탈유저의 비율과 LTV를 계산함
+  * ARPU는 아래와 같이 계산되었습니다.
+    * 본 데이터셋의 구매 기록은 2015년 1월 1일부터 2017년 3월 31일사이를 대상으로 함 (27개월)
+  
+  $$총\,매출 = 대상\,기간\,동안의\,그룹별\,매출$$
+  $$ARPU = \frac{총\,매출 / 27개월}{그룹별\,전체\,고객\,수}$$
+  
+  * LTV는 아래와 같이 계산되었습니다.
+  
+  $$LTV = \frac{ARPU}{그룹별\,실제\,이탈유저의\,비율}$$
+
+<table align = 'center'>
+ <tr>
+  <th>이탈 확률(%)</th>
+  <th>총 유저수(명)</th>
+  <th>이탈 유저의 비율(명)</th>
+  <th>ARPU(NTD)</th>
+  <th>LTV(NTD)</th>
+ </tr>
+ <tr>
+  <td align = 'center'>0 ~ 10</td>
+  <td align = 'center'>337,884</td>
+  <td align = 'center'>1.01</td>
+  <td align = 'center'>88</td>
+  <td align = 'center'>8713</td>
+ </tr>
+ <tr>
+  <td align = 'center'>10 ~ 20</td>
+  <td align = 'center'>27,182</td>
+  <td align = 'center'>13.25</td>
+  <td align = 'center'>111</td>
+  <td align = 'center'>838</td>
+ </tr>
+ <tr>
+  <td align = 'center'>20 ~ 30</td>
+  <td align = 'center'>29,607</td>
+  <td align = 'center'>21.86</td>
+  <td align = 'center'>90</td>
+  <td align = 'center'>412</td>
+ </tr>
+ <tr>
+  <td align = 'center'>30 ~ 40</td>
+  <td align = 'center'>25,022</td>
+  <td align = 'center'>34.06</td>
+  <td align = 'center'>74</td>
+  <td align = 'center'>217</td>
+ </tr>
+ <tr>
+  <td align = 'center'>40 ~ 50</td>
+  <td align = 'center'>15,577</td>
+  <td align = 'center'>48.85</td>
+  <td align = 'center'>71</td>
+  <td align = 'center'>145</td>
+ </tr>
+ <tr>
+  <td align = 'center'>50 ~ 60</td>
+  <td align = 'center'>10,909</td>
+  <td align = 'center'>60.78</td>
+  <td align = 'center'>83</td>
+  <td align = 'center'>137</td>
+ </tr>
+ <tr>
+  <td align = 'center'>60 ~ 70</td>
+  <td align = 'center'>10,040</td>
+  <td align = 'center'>71.44</td>
+  <td align = 'center'>87</td>
+  <td align = 'center'>122</td>
+ </tr>
+ <tr>
+  <td align = 'center'>70 ~ 80</td>
+  <td align = 'center'>8,501</td>
+  <td align = 'center'>83.46</td>
+  <td align = 'center'>88</td>
+  <td align = 'center'>105</td>
+ </tr>
+ <tr>
+  <td align = 'center'>80 ~ 90</td>
+  <td align = 'center'>7,023</td>
+  <td align = 'center'>91.98</td>
+  <td align = 'center'>51</td>
+  <td align = 'center'>55</td>
+ </tr>
+ <tr>
+  <td align = 'center'>90 ~ 100</td>
+  <td align = 'center'>4,726</td>
+  <td align = 'center'>96.42</td>
+  <td align = 'center'>61</td>
+  <td align = 'center'>63</td>
+ </tr>
+</table>
