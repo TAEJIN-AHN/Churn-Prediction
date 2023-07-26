@@ -2,8 +2,8 @@
 
 ## **A. 목차**
 * A. [목차](#a-목차)
-* B. 프로젝트 진행
-  * B.1. 문제 정의
+* B. [프로젝트 진행](#b-프로젝트-진행)
+  * B.1. [문제 정의](#b1-문제-정의)
   * B.2. 주요 액션
     * B.2.1. 데이터 로드 - [관련 코드](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/2af681946278faa49b00e10620ae7a6aec0137b5/data_load_sampling.ipynb)
     * B.2.2. 데이터 샘플링 - [관련 코드](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/2af681946278faa49b00e10620ae7a6aec0137b5/data_load_sampling.ipynb)
