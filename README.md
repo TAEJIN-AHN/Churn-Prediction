@@ -11,8 +11,8 @@
     * B.2.4. 데이터 전처리 - [관련 코드](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/62ffff6dffe22a057bba0c35e42c2323176e6213/data_load_sampling.ipynb)
     * B.2.5. 모델링 - [관련 코드](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/62ffff6dffe22a057bba0c35e42c2323176e6213/data_load_sampling.ipynb)
     * B.2.6. 이탈 확률 구간별 LTV 계산 - [관련 코드](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/3113a2361365c466caebec09f3c7c67ff66ae9e2/LTV_calculation.ipynb)
-  * B.3. 결과 및 기대효과
-* C. Methods Used
+* C. 결과 및 기대효과
+* D. Methods Used
 ---
 ## **B. 프로젝트 진행**
 ### **B.1. 문제 정의**
