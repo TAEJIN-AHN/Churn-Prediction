@@ -278,8 +278,8 @@
  <tr>
   <td align = 'center'>★</td>
   <td align = 'center'>사용함</td>
-  <td align = 'center'>사용하지 않음</td>
-  <td align = 'center'>사용하지 않음</td>
+  <td align = 'center'>사용안함</td>
+  <td align = 'center'>사용안함</td>
   <td align = 'center'>LGBM</td>
   <td align = 'center'>0.4449</td>
   <td align = 'center'>0.7496</td>
@@ -287,9 +287,9 @@
  </tr>
  <tr>
   <td align = 'center'>-</td>
-  <td align = 'center'>사용하지 않음</td>
-  <td align = 'center'>사용하지 않음</td>
-  <td align = 'center'>사용하지 않음</td>
+  <td align = 'center'>사용안함</td>
+  <td align = 'center'>사용안함</td>
+  <td align = 'center'>사용안함</td>
   <td align = 'center'>LGBM</td>
   <td align = 'center'>0.4453</td>
   <td align = 'center'>0.7487</td>
@@ -297,9 +297,9 @@
  </tr>
  <tr>
   <td align = 'center'>-</td>
-  <td align = 'center'>사용하지 않음</td>
-  <td align = 'center'>사용하지 않음</td>
-  <td align = 'center'>사용하지 않음</td>
+  <td align = 'center'>사용안함</td>
+  <td align = 'center'>사용안함</td>
+  <td align = 'center'>사용안함</td>
   <td align = 'center'>CATBOOST</td>
   <td align = 'center'>0.4877</td>
   <td align = 'center'>0.7350</td>
@@ -308,8 +308,8 @@
  <tr>
   <td align = 'center'>-</td>
   <td align = 'center'>사용함</td>
-  <td align = 'center'>사용하지 않음</td>
-  <td align = 'center'>사용하지 않음</td>
+  <td align = 'center'>사용안함</td>
+  <td align = 'center'>사용안함</td>
   <td align = 'center'>XGBOOST</td>
   <td align = 'center'>0.4748</td>
   <td align = 'center'>0.7321</td>
@@ -317,9 +317,9 @@
  </tr>
  <tr>
   <td align = 'center'>-</td>
-  <td align = 'center'>사용하지 않음</td>
-  <td align = 'center'>사용하지 않음</td>
-  <td align = 'center'>사용하지 않음</td>
+  <td align = 'center'>사용안함</td>
+  <td align = 'center'>사용안함</td>
+  <td align = 'center'>사용안함</td>
   <td align = 'center'>XGBOOST</td>
   <td align = 'center'>0.4748</td>
   <td align = 'center'>0.7321</td>
