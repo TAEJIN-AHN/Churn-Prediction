@@ -10,7 +10,8 @@
     * B.2.3. EDA - [관련 코드](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/2745414da82c974467b132cad6f9aee320595930/eda.ipynb)
     * B.2.4. 데이터 전처리 - [관련 코드](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/372f5aefe36c5ecca9483f50309ae3aecbbffb92/preprocessing_modeling.ipynb)
     * B.2.5. 모델링 - [관련 코드](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/372f5aefe36c5ecca9483f50309ae3aecbbffb92/preprocessing_modeling.ipynb)
-    * B.2.6. 이탈 확률 구간별 LTV 계산 - 관련 코드
+    * B.2.6. 이탈 확률 구간별 LTV 계산 - [관련 코드](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/3113a2361365c466caebec09f3c7c67ff66ae9e2/LTV_calculation.ipynb)
+
   * B.3. 결과
 * C. Deck
 * D. Methods Used
