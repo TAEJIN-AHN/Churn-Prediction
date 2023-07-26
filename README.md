@@ -1,7 +1,7 @@
 <img src = "https://github.com/TAEJIN-AHN/Churn-Prediction/assets/125945387/55cb1525-0ea2-4d54-8086-a07b97dd7e01)">
 
 ## **A. 목차**
-* A. 목차
+* A. [목차](#a-목차)
 * B. 프로젝트 진행
   * B.1. 문제 정의
   * B.2. 주요 액션
