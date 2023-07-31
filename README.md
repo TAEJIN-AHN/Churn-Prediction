@@ -19,12 +19,14 @@
 * 멜론, 스포티파이와 같은 음원 스트리밍 서비스는 고객을 유지하는 것이 안정적인 매출 발생과 연결됨
 * 본 프로젝트에서는 고객의 이탈 여부를 예측하는 분류 모델을 개발하여 고객의 이탈 방지를 위한 선제적 대응을 가능하게 하고자 함
 
+---
+
 ### **B.2. 주요 액션**
 #### **B.2.1. 데이터 로드**
 * 자세한 내용과 코드는 [링크](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/2af681946278faa49b00e10620ae7a6aec0137b5/data_load_sampling.ipynb)를 참고해주시기 바랍니다.
 * 2017년 Kaggle에서 진행된 [KKBox's Churn Prediction Challenge](https://www.kaggle.com/competitions/kkbox-churn-prediction-challenge/overview/description)에서 제공된 대만 유명 음원 스트리밍 서비스 KKBox 유저 데이터를 사용함
 * 데이터셋은 아래와 같이 크게 4가지 유형의 데이터로 구분되어 있음
-  
+
 <table align = "center">
  <tr>
   <td><p align = 'center'>데이터 유형</p></td>
@@ -51,6 +53,8 @@
 <p align = "center" >※ 본 데이터에서는 멤버십 만료 후 30일 이내에 추가적인 서비스 구매 이력이 없는 유저를 '이탈'했다고 규정함</p>
 
 * 데이터셋의 크기가 29GB에 달하여 데이터를 모두 메모리에 올리는 Pandas를 이용할 수 없었고, 병렬, 분산처리를 위해 Pyspark를 사용함
+
+---
 
 #### **B.2.2. 데이터 샘플링**
 * 자세한 내용과 코드는 [링크](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/2af681946278faa49b00e10620ae7a6aec0137b5/data_load_sampling.ipynb)를 참고해주시기 바랍니다.
@@ -83,6 +87,8 @@
 
 * 이탈에 영향을 미치는 특성을 최대한 파악하기 위해, 4개 데이터를 모두 사용할 수 있는 ④번 그룹 (955,126명)에 한하여 프로젝트를 수행함
 * 또한, 팀원 개개인의 컴퓨팅 파워(로컬 기준)를 고려하여 ④번 그룹 95만명 중 대략 47만명 가량의 데이터를 샘플링하여 사용함
+
+---
 
 #### **B.2.3. EDA**
 
@@ -157,6 +163,8 @@
     </tr>
 </table>
 
+---
+
 #### **B.2.4. 데이터 전처리**
 * 자세한 내용과 코드는 [링크](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/62ffff6dffe22a057bba0c35e42c2323176e6213/data_load_sampling.ipynb)를 참고해주시기 바랍니다.
 * EDA 결과에 따라 아래와 같이 전처리를 수행함
@@ -170,6 +178,8 @@
   * **사용 기록**
     * 일일 총 재생시간이 음수이거나 하루(24시간 * 60분 * 60초)를 넘어서는 데이터는 삭제
     * Boxplot 전개 시 확인되는 재생 음원 수의 이상치 데이터 삭제 (IQR 활용)
+
+---
 
 #### **B.2.5. 모델링**
 * 자세한 내용과 코드는 [링크](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/62ffff6dffe22a057bba0c35e42c2323176e6213/data_load_sampling.ipynb)를 참고해주시기 바랍니다.
@@ -339,6 +349,8 @@
   * **최종 성능**
     * Test Recall : 0.4449 -> **0.4912** (+ 0.0463, 기존 대비 약 10% 상승)
     * Test Precision : 0.7496 -> **0.7389** (- 0.0107, 기존 대비 약 1% 하락)
+
+---
 
 #### **B.2.6. 이탈 확률 구간별 LTV 계산** 
 * 자세한 내용과 코드는 [링크](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/3113a2361365c466caebec09f3c7c67ff66ae9e2/LTV_calculation.ipynb)를 참고해주시기 바랍니다.
