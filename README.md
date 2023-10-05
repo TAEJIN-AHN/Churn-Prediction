@@ -8,8 +8,8 @@
     * B.2.1. [데이터 로드](#b21-데이터-로드) - [관련 코드](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/2af681946278faa49b00e10620ae7a6aec0137b5/data_load_sampling.ipynb)
     * B.2.2. [데이터 샘플링](#b22-데이터-샘플링) - [관련 코드](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/2af681946278faa49b00e10620ae7a6aec0137b5/data_load_sampling.ipynb)
     * B.2.3. [EDA](#b23-eda) - [관련 코드](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/2745414da82c974467b132cad6f9aee320595930/eda.ipynb)
-    * B.2.4. [데이터 전처리](#b24-데이터-전처리) - [관련 코드](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/62ffff6dffe22a057bba0c35e42c2323176e6213/data_load_sampling.ipynb)
-    * B.2.5. [모델링](#b25-모델링) - [관련 코드](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/62ffff6dffe22a057bba0c35e42c2323176e6213/data_load_sampling.ipynb)
+    * B.2.4. [데이터 전처리](#b24-데이터-전처리) - [관련 코드](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/5bb3c61ed55963a907f89dcf9ddb306c84d9154f/preprocessing_modeling.ipynb)
+    * B.2.5. [모델링](#b25-모델링) - [관련 코드](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/5bb3c61ed55963a907f89dcf9ddb306c84d9154f/preprocessing_modeling.ipynb)
     * B.2.6. [이탈 확률 구간별 LTV 계산](#b26-이탈-확률-구간별-ltv-계산) - [관련 코드](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/3113a2361365c466caebec09f3c7c67ff66ae9e2/LTV_calculation.ipynb)
 * C. [결과 및 기대효과](#c-결과-및-기대효과)
 * D. [Methods Used](#d-methods-used)
@@ -166,7 +166,7 @@
 ---
 
 #### **B.2.4. 데이터 전처리**
-* 자세한 내용과 코드는 [링크](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/62ffff6dffe22a057bba0c35e42c2323176e6213/data_load_sampling.ipynb)를 참고해주시기 바랍니다.
+* 자세한 내용과 코드는 [링크](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/5bb3c61ed55963a907f89dcf9ddb306c84d9154f/preprocessing_modeling.ipynb)를 참고해주시기 바랍니다.
 * EDA 결과에 따라 아래와 같이 전처리를 수행함
   * **구매 기록**
     * 거래 일자가 중복되는 데이터는 가장 마지막만 남김
@@ -182,7 +182,7 @@
 ---
 
 #### **B.2.5. 모델링**
-* 자세한 내용과 코드는 [링크](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/62ffff6dffe22a057bba0c35e42c2323176e6213/data_load_sampling.ipynb)를 참고해주시기 바랍니다.
+* 자세한 내용과 코드는 [링크](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/5bb3c61ed55963a907f89dcf9ddb306c84d9154f/preprocessing_modeling.ipynb)를 참고해주시기 바랍니다.
 * 모델링에 사용한 입력 변수는 다음과 같음<br>
 <table align = 'center'>
   <tr>
