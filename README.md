@@ -93,7 +93,7 @@
 #### **B.2.3. EDA**
 
 * 자세한 내용과 코드는 [링크](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/2745414da82c974467b132cad6f9aee320595930/eda.ipynb)를 참고해주시기 바랍니다.
-* EDA를 통해 확인한 내용은 다음과 같음
+* EDA를 통해 확인한 주요 내용은 다음과 같음
   * 인사이트 관련
     
 <table align = 'center'>
