@@ -458,7 +458,7 @@
 
 ### **⑦ 결과 및 기대효과**
 * EDA를 통해 CRM 및 퍼포먼스 마케팅에 활용할 수 있는 Agenda 도출
-  <img src = 'https://github.com/TAEJIN-AHN/Churn-Prediction/assets/125945387/a94ab939-29bb-4ed9-83ef-be62f663489d'>
+  <p align = 'center'><img src = 'https://github.com/TAEJIN-AHN/Churn-Prediction/assets/125945387/11d25b1e-410b-481b-8201-bda773c197f3'></p>
 
 ## **C. 결과 및 기대효과**
 * Test Precision이 0.74, Test Recall이 0.49인 이탈 유저 분류 모델을 개발하였음
