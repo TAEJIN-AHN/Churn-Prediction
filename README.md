@@ -103,9 +103,8 @@
 
   * **가입 경로에 따라 이탈율에 큰 차이를 보임**
     <p>가입 경로가 7인 유저 그룹의 이탈율이 가장 낮았고, 가입경로가 4인 유저의 이탈율이 가장 높았음 <br> 이탈율이 낮은 가입 경로의 홍보 활동을 극대화하는 방향의 퍼포먼스 마케팅이 가능하다고 판단됨</p>
-    
+    <p><img src = 'https://github.com/TAEJIN-AHN/Churn-Prediction/assets/125945387/585bf69b-70ce-41cd-b980-a105eaef37ea' width = 70%></p>
 
-    <p
   * 인사이트 관련
     
 <table align = 'center'>
