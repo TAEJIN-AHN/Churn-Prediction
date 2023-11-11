@@ -99,7 +99,11 @@
   
   * **최근에 가입한 유저일 수록 이탈율이 높음**
     <p>경쟁 서비스의 대만 진출이 2013년에서 2016년에 집중, 소비자의 선택의 폭이 넓어짐 <br> 애플 뮤직 : <a href = 'https://www.musicbusinessworldwide.com/apple-music-launches-in-taiwan-and-turkey/'>2016년 2월</a> / 유튜브 뮤직 : <a href = 'https://ko.wikipedia.org/wiki/%EC%9C%A0%ED%8A%9C%EB%B8%8C_%EB%AE%A4%EC%A7%81#cite_note-21'>2015년 11월</a> / 스포티파이 : <a href = 'https://thenextweb.com/news/spotify-quietly-launches-in-taiwan-its-fourth-country-in-asia'>2013년 9월</a></p>
-    <p><img src = 'https://github.com/TAEJIN-AHN/Churn-Prediction/assets/125945387/01b9e505-f516-4a30-a84b-b648756f0270'></p>
+    <p><img src = 'https://github.com/TAEJIN-AHN/Churn-Prediction/assets/125945387/01b9e505-f516-4a30-a84b-b648756f0270' width = 80%></p>
+
+  * **가입 경로에 따라 이탈율에 큰 차이를 보임**
+    <p>가입 경로가 7인 유저 그룹의 이탈율이 가장 낮았고, 가입경로가 4인 유저의 이탈율이 가장 높았음 <br> 이탈율이 낮은 가입 경로의 홍보 활동을 극대화하는 방향의 퍼포먼스 마케팅이 가능하다고 판단됨
+결제 방식에</p>
   * 인사이트 관련
     
 <table align = 'center'>
