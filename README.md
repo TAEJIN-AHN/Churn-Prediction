@@ -146,7 +146,7 @@
  </tr>
 </table>
 
-  * 전처리 및 스케일링 관련
+  * 전처리 관련
 
 <table align = 'center'>
     <tr>
