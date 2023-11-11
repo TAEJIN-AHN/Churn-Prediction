@@ -20,7 +20,7 @@
   * Segment별로 산정된 LTV를 마케팅 비용 최적화 및 로열티 프로그램에 이용할 수 있습니다.
 
 ### **④ 주요 액션**
-<p align = 'center'><img src = 'https://github.com/TAEJIN-AHN/Churn-Prediction/assets/125945387/38c6461a-e759-4c0d-bb1f-39a34fc32b50' width = 60%></p>
+<p align = 'center'><img src = 'https://github.com/TAEJIN-AHN/Churn-Prediction/assets/125945387/38c6461a-e759-4c0d-bb1f-39a34fc32b50' width = 40%></p>
 
 ---
 ## **상세**
