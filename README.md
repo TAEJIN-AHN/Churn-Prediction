@@ -461,28 +461,4 @@
   <p align = 'center'><img src = 'https://github.com/TAEJIN-AHN/Churn-Prediction/assets/125945387/11d25b1e-410b-481b-8201-bda773c197f3'></p>
 
 * **이탈율에 기반한 Semgentation과 LTV 산정으로 고객 관리 방안 수립, 마케팅 비용 최적화 등이 가능함**
-
-
-
-## **C. 결과 및 기대효과**
-* Test Precision이 0.74, Test Recall이 0.49인 이탈 유저 분류 모델을 개발하였음
-* 본 모델을 활용하여 이탈 확률에 따라 고객을 세분화하고, 그룹별로 LTV를 산정하여 수익성을 해치지 않는 고객 유지 비용 지출이 어느 정도인지를 확인할 수 있음  
-
----
-
-## **D. Methods Used**
-* 모델
-  * LightGBM
-  * CatBoost
-  * XGBoost
-* 시각화
-  * matplotlib
-  * seaborn 
-* 데이터 전처리
-  * pyspark
-  * pandas
-  * numpy
-  * sklearn
-* 개발 환경
-  * colab
-  * python
+  <p align = 'center'><img src = 'https://github.com/TAEJIN-AHN/Churn-Prediction/assets/125945387/5a7f837d-97c7-41e5-8789-2f811a4beba8'></p>
