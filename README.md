@@ -457,8 +457,12 @@
 ---
 
 ### **⑦ 결과 및 기대효과**
-* EDA를 통해 CRM 및 퍼포먼스 마케팅에 활용할 수 있는 Agenda 도출
+* **EDA를 통해 CRM 및 퍼포먼스 마케팅에 활용할 수 있는 Agenda 도출**
   <p align = 'center'><img src = 'https://github.com/TAEJIN-AHN/Churn-Prediction/assets/125945387/11d25b1e-410b-481b-8201-bda773c197f3'></p>
+
+* **이탈율에 기반한 Semgentation과 LTV 산정으로 고객 관리 방안 수립, 마케팅 비용 최적화 등이 가능함**
+
+
 
 ## **C. 결과 및 기대효과**
 * Test Precision이 0.74, Test Recall이 0.49인 이탈 유저 분류 모델을 개발하였음
