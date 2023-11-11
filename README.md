@@ -112,64 +112,64 @@
 * 기타 발견 사항은 아래와 같음
   * 인사이트 관련
     
-<table align = 'center'>
- <tr>
-     <th>데이터 유형</th>
-     <th>EDA 내용</th>
- <tr>
-     <td rowspan = '1' valign = 'center' align = 'center'>인적 정보</td>
-     <td>10대 후반 ~ 20대 초반의 사용자가 타 연령대에 비해 이탈율이 높음</td>
- </tr>
- <tr>
-     <td rowspan = '2' valign = 'center' align = 'center'>사용 기록</td>
-     <td>사용 기록이 많은 고객일 수록 이탈율이 낮음</td>
- </tr>
- <tr>
-     <!--<td>사용 기록</td>-->
-     <td>이탈 유저의 경우 장기간 미접속 경험 비율이 높음</td>
- </tr>
- <tr>
-     <td rowspan = '4'  valign = 'center' align = 'center'>구매 기록</td>
-     <td>고객이 선택하는 결제 수단에 따라 이탈율의 편차가 큼</td>
- </tr>
- <tr>
-     <!--<td>구매 기록</td>-->
-     <td>이탈 유저는 구독 자동 갱신 횟수가 적음</td>
- </tr>
- <tr>
-     <!--<td>구매 기록</td>-->
-     <td>구독 유지 기간이 길수록 이탈율은 낮아짐</td>
- </tr>
- <tr>
-     <!--<td>구매 기록</td>-->
-     <td>가입 이후 결제 방식을 변경한 고객의 이탈율이 더 높음</td>
- </tr>
-</table>
-
-  * 전처리 관련
-
-<table align = 'center'>
+   <table align = 'center'>
     <tr>
         <th>데이터 유형</th>
         <th>EDA 내용</th>
     <tr>
-        <td valign = 'center' align = 'center'>공통</td>
-        <td >이탈 잔존 유저의 구성 비율이 불균형함</td>
+        <td rowspan = '1' valign = 'center' align = 'center'>인적 정보</td>
+        <td>10대 후반 ~ 20대 초반의 사용자가 타 연령대에 비해 이탈율이 높음</td>
     </tr>
     <tr>
-        <td valign = 'center' align = 'center'>인적 정보</td>
-        <td>성별, 나이 데이터에 결측치, 이상치가 다수 존재함</td>
+        <td rowspan = '2' valign = 'center' align = 'center'>사용 기록</td>
+        <td>사용 기록이 많은 고객일 수록 이탈율이 낮음</td>
     </tr>
     <tr>
-        <td valign = 'center' align = 'center'>사용 기록</td>
-        <td>음원 재생 관련 데이터에 이상치가 다수 존재함</td>
+        <!--<td>사용 기록</td>-->
+        <td>이탈 유저의 경우 장기간 미접속 경험 비율이 높음</td>
     </tr>
     <tr>
-        <td valign = 'center' align = 'center'>구매 기록</td>
-        <td>거래 일자와 구독 만료일 데이터에 이상치가 발견됨</td>
+        <td rowspan = '4'  valign = 'center' align = 'center'>구매 기록</td>
+        <td>고객이 선택하는 결제 수단에 따라 이탈율의 편차가 큼</td>
     </tr>
+    <tr>
+        <!--<td>구매 기록</td>-->
+        <td>이탈 유저는 구독 자동 갱신 횟수가 적음</td>
     </tr>
-</table>
+    <tr>
+        <!--<td>구매 기록</td>-->
+        <td>구독 유지 기간이 길수록 이탈율은 낮아짐</td>
+    </tr>
+    <tr>
+        <!--<td>구매 기록</td>-->
+        <td>가입 이후 결제 방식을 변경한 고객의 이탈율이 더 높음</td>
+    </tr>
+   </table>
+
+  * 전처리 관련
+
+   <table align = 'center'>
+       <tr>
+           <th>데이터 유형</th>
+           <th>EDA 내용</th>
+       <tr>
+           <td valign = 'center' align = 'center'>공통</td>
+           <td >이탈 잔존 유저의 구성 비율이 불균형함</td>
+       </tr>
+       <tr>
+           <td valign = 'center' align = 'center'>인적 정보</td>
+           <td>성별, 나이 데이터에 결측치, 이상치가 다수 존재함</td>
+       </tr>
+       <tr>
+           <td valign = 'center' align = 'center'>사용 기록</td>
+           <td>음원 재생 관련 데이터에 이상치가 다수 존재함</td>
+       </tr>
+       <tr>
+           <td valign = 'center' align = 'center'>구매 기록</td>
+           <td>거래 일자와 구독 만료일 데이터에 이상치가 발견됨</td>
+       </tr>
+       </tr>
+   </table>
 
 ---
 
