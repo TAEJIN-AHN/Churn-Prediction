@@ -1,20 +1,28 @@
-<img src = "https://github.com/TAEJIN-AHN/Churn-Prediction/assets/125945387/55cb1525-0ea2-4d54-8086-a07b97dd7e01)">
+# **음원 스트리밍 서비스 이용자의 이탈 여부 예측**
 
-## **A. 목차**
-* A. [목차](#a-목차)
-* B. [프로젝트 진행](#b-프로젝트-진행)
-  * B.1. [문제 정의](#b1-문제-정의)
-  * B.2. [주요 액션](#b2-주요-액션)
-    * B.2.1. [데이터 로드](#b21-데이터-로드) - [관련 코드](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/2af681946278faa49b00e10620ae7a6aec0137b5/data_load_sampling.ipynb)
-    * B.2.2. [데이터 샘플링](#b22-데이터-샘플링) - [관련 코드](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/2af681946278faa49b00e10620ae7a6aec0137b5/data_load_sampling.ipynb)
-    * B.2.3. [EDA](#b23-eda) - [관련 코드](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/2745414da82c974467b132cad6f9aee320595930/eda.ipynb)
-    * B.2.4. [데이터 전처리](#b24-데이터-전처리) - [관련 코드](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/5bb3c61ed55963a907f89dcf9ddb306c84d9154f/preprocessing_modeling.ipynb)
-    * B.2.5. [모델링](#b25-모델링) - [관련 코드](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/5bb3c61ed55963a907f89dcf9ddb306c84d9154f/preprocessing_modeling.ipynb)
-    * B.2.6. [이탈 확률 구간별 LTV 계산](#b26-이탈-확률-구간별-ltv-계산) - [관련 코드](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/3113a2361365c466caebec09f3c7c67ff66ae9e2/LTV_calculation.ipynb)
-* C. [결과 및 기대효과](#c-결과-및-기대효과)
-* D. [Methods Used](#d-methods-used)
+## **요약**
+### **① 기본 정보**
+* **팀구성 및 기여도 : 4명 / 25%**
+* **담당 역할**
+  * Pyspark를 이용한 대용량 로그 데이터 전처리 및 샘플링
+  * EDA 및 Matplotlib, Seaborn을 이용한 데이터 시각화
+  * 이탈 확률 구간별 고객 Segmentation 및 Segment별 LTV 산정
+
+### **② 프로젝트 진행 배경**
+* 로그 데이터, 결제 데이터 등에 대한 다각도의 EDA를 통해 **서비스 개선 Agenda를 도출**하고자 합니다.
+* 고객 이탈 예측 모델을 개발, 이탈율이 높은 고객을 선별해 관리하는 CRM을 가능하게 하고자 합니다.
+
+### **③ 결과 및 직무에 적용할 점**
+* EDA를 통해 CRM 및 퍼포먼스 마케팅에 활용할 수 있는 서비스 개선 관련 Agenda를 도출했습니다.
+  * 하나의 분석에서도 유관부서들과의 협업점을 찾고, 프로덕트/마케팅에 도움을 드릴 수 있습니다.
+* 고객의 이탈율을 기반으로 Segmentation을 수행하고 Segment별 LTV를 산정하였습니다.
+  * 이탈 확률이 높은 Segment에 대해 개별적인 고객 유지 전략을 수립할 수 있습니다.
+  * Segment별로 산정된 LTV를 마케팅 비용 최적화 및 로열티 프로그램에 이용할 수 있습니다.
+
+### **④ 주요 액션**
+
 ---
-## **B. 프로젝트 진행**
+## **상세**
 ### **B.1. 문제 정의**
 * 멜론, 스포티파이와 같은 음원 스트리밍 서비스는 고객을 유지하는 것이 안정적인 매출 발생과 연결됨
 * 본 프로젝트에서는 고객의 이탈 여부를 예측하는 분류 모델을 개발하여 고객의 이탈 방지를 위한 선제적 대응을 가능하게 하고자 함
