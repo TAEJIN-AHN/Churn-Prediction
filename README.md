@@ -458,7 +458,7 @@
 
 ### **⑦ 결과 및 기대효과**
 * **EDA를 통해 CRM 및 퍼포먼스 마케팅에 활용할 수 있는 Agenda 도출**
-  <p align = 'center'><img src = 'https://github.com/TAEJIN-AHN/Churn-Prediction/assets/125945387/11d25b1e-410b-481b-8201-bda773c197f3'></p>
+  <p align = 'center'><img src = 'https://github.com/TAEJIN-AHN/Churn-Prediction/assets/125945387/11d25b1e-410b-481b-8201-bda773c197f3' width = 80%></p>
 
 * **이탈율에 기반한 Semgentation과 LTV 산정으로 고객 관리 방안 수립, 마케팅 비용 최적화 등이 가능함**
-  <p align = 'center'><img src = 'https://github.com/TAEJIN-AHN/Churn-Prediction/assets/125945387/5a7f837d-97c7-41e5-8789-2f811a4beba8'></p>
+  <p align = 'center'><img src = 'https://github.com/TAEJIN-AHN/Churn-Prediction/assets/125945387/5a7f837d-97c7-41e5-8789-2f811a4beba8' width = 80%></p>
