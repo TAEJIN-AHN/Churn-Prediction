@@ -99,7 +99,7 @@
   
   * **최근에 가입한 유저일 수록 이탈율이 높음**
     <p>경쟁 서비스의 대만 진출이 2013년에서 2016년에 집중, 소비자의 선택의 폭이 넓어짐 <br> 애플 뮤직 : <a href = 'https://www.musicbusinessworldwide.com/apple-music-launches-in-taiwan-and-turkey/'>2016년 2월</a> / 유튜브 뮤직 : <a href = 'https://ko.wikipedia.org/wiki/%EC%9C%A0%ED%8A%9C%EB%B8%8C_%EB%AE%A4%EC%A7%81#cite_note-21'>2015년 11월</a> / 스포티파이 : <a href = 'https://thenextweb.com/news/spotify-quietly-launches-in-taiwan-its-fourth-country-in-asia'>2013년 9월</a></p>
-    <p></p>
+    <p><img src = 'https://github.com/TAEJIN-AHN/Churn-Prediction/assets/125945387/01b9e505-f516-4a30-a84b-b648756f0270'></p>
   * 인사이트 관련
     
 <table align = 'center'>
