@@ -10,12 +10,12 @@
 
 ### **② 프로젝트 진행 배경**
 * 로그 데이터, 결제 데이터 등에 대한 다각도의 EDA를 통해 **서비스 개선 Agenda를 도출**하고자 합니다.
-* 고객 이탈 예측 모델을 개발, 이탈율이 높은 고객을 선별해 관리하는 CRM을 가능하게 하고자 합니다.
+* 고객 이탈 예측 모델을 개발, 이탈율이 높은 고객을 선별해 관리하는 **CRM**을 가능하게 하고자 합니다.
 
 ### **③ 결과 및 직무에 적용할 점**
-* EDA를 통해 CRM 및 퍼포먼스 마케팅에 활용할 수 있는 서비스 개선 관련 Agenda를 도출했습니다.
+* **EDA를 통해 CRM 및 퍼포먼스 마케팅에 활용할 수 있는 서비스 개선 관련 Agenda를 도출했습니다.**
   * 하나의 분석에서도 유관부서들과의 협업점을 찾고, 프로덕트/마케팅에 도움을 드릴 수 있습니다.
-* 고객의 이탈율을 기반으로 Segmentation을 수행하고 Segment별 LTV를 산정하였습니다.
+* **고객의 이탈율을 기반으로 Segmentation을 수행하고 Segment별 LTV를 산정하였습니다.**
   * 이탈 확률이 높은 Segment에 대해 개별적인 고객 유지 전략을 수립할 수 있습니다.
   * Segment별로 산정된 LTV를 마케팅 비용 최적화 및 로열티 프로그램에 이용할 수 있습니다.
 
@@ -24,14 +24,7 @@
 
 ---
 ## **상세**
-### **B.1. 문제 정의**
-* 멜론, 스포티파이와 같은 음원 스트리밍 서비스는 고객을 유지하는 것이 안정적인 매출 발생과 연결됨
-* 본 프로젝트에서는 고객의 이탈 여부를 예측하는 분류 모델을 개발하여 고객의 이탈 방지를 위한 선제적 대응을 가능하게 하고자 함
-
----
-
-### **B.2. 주요 액션**
-#### **B.2.1. 데이터 로드**
+### **① 데이터 로드**
 * 자세한 내용과 코드는 [링크](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/2af681946278faa49b00e10620ae7a6aec0137b5/data_load_sampling.ipynb)를 참고해주시기 바랍니다.
 * 2017년 Kaggle에서 진행된 [KKBox's Churn Prediction Challenge](https://www.kaggle.com/competitions/kkbox-churn-prediction-challenge/overview/description)에서 제공된 대만 유명 음원 스트리밍 서비스 KKBox 유저 데이터를 사용함
 * 데이터셋은 아래와 같이 크게 4가지 유형의 데이터로 구분되어 있음
@@ -65,7 +58,7 @@
 
 ---
 
-#### **B.2.2. 데이터 샘플링**
+### **② 데이터 샘플링**
 * 자세한 내용과 코드는 [링크](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/2af681946278faa49b00e10620ae7a6aec0137b5/data_load_sampling.ipynb)를 참고해주시기 바랍니다.
 * 서비스 사용 기록, 이탈 여부, 구매 기록, 인적정보를 모두 알 수 있는 고객은 전체 중 일부이며, 상당 수의 고객은 1개 이상의 정보가 누락되어 있음
 * 각 데이터가 담고 있는 고객 집합을 벤 다이어그램으로 나타내면 다음과 같음
@@ -99,10 +92,14 @@
 
 ---
 
-#### **B.2.3. EDA**
+#### **③ EDA**
 
 * 자세한 내용과 코드는 [링크](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/2745414da82c974467b132cad6f9aee320595930/eda.ipynb)를 참고해주시기 바랍니다.
 * EDA를 통해 확인한 주요 내용은 다음과 같음
+  
+  * **최근에 가입한 유저일 수록 이탈율이 높음**
+    <p>경쟁 서비스의 대만 진출이 2013년에서 2016년에 집중, 소비자의 선택의 폭이 넓어짐 <br> 애플 뮤직 : <a href = 'https://www.musicbusinessworldwide.com/apple-music-launches-in-taiwan-and-turkey/'>2016년 2월</a> / 유튜브 뮤직 : <a href = 'https://ko.wikipedia.org/wiki/%EC%9C%A0%ED%8A%9C%EB%B8%8C_%EB%AE%A4%EC%A7%81#cite_note-21'>2015년 11월</a> / 스포티파이 : <a href = 'https://thenextweb.com/news/spotify-quietly-launches-in-taiwan-its-fourth-country-in-asia'>2013년 9월</a></p>
+    <p></p>
   * 인사이트 관련
     
 <table align = 'center'>
