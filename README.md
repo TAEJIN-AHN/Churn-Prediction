@@ -1,4 +1,4 @@
-![image](https://github.com/TAEJIN-AHN/Churn-Prediction/assets/125945387/ab10e421-7593-4bbc-9af3-a72acd2ba6d9)# **음원 스트리밍 서비스 이용자의 이탈 여부 예측**
+# **음원 스트리밍 서비스 이용자의 이탈 여부 예측**
 
 ## **요약**
 ### **① 기본 정보**
