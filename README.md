@@ -1,4 +1,4 @@
-# **음원 스트리밍 서비스 이용자의 이탈 여부 예측**
+![image](https://github.com/TAEJIN-AHN/Churn-Prediction/assets/125945387/ab10e421-7593-4bbc-9af3-a72acd2ba6d9)# **음원 스트리밍 서비스 이용자의 이탈 여부 예측**
 
 ## **요약**
 ### **① 기본 정보**
@@ -173,7 +173,7 @@
 
 ---
 
-#### **B.2.4. 데이터 전처리**
+### **④ 데이터 전처리**
 * 자세한 내용과 코드는 [링크](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/5bb3c61ed55963a907f89dcf9ddb306c84d9154f/preprocessing_modeling.ipynb)를 참고해주시기 바랍니다.
 * EDA 결과에 따라 아래와 같이 전처리를 수행함
   * **구매 기록**
@@ -189,7 +189,7 @@
 
 ---
 
-#### **B.2.5. 모델링**
+### **⑤ 모델링**
 * 자세한 내용과 코드는 [링크](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/5bb3c61ed55963a907f89dcf9ddb306c84d9154f/preprocessing_modeling.ipynb)를 참고해주시기 바랍니다.
 * 모델링에 사용한 입력 변수는 다음과 같음<br>
 <table align = 'center'>
@@ -360,7 +360,7 @@
 
 ---
 
-#### **B.2.6. 이탈 확률 구간별 LTV 계산** 
+### **⑥ 이탈 확률 기반 Segmentation 및 LTV 산정** 
 * 자세한 내용과 코드는 [링크](https://github.com/TAEJIN-AHN/Churn-Prediction/blob/3113a2361365c466caebec09f3c7c67ff66ae9e2/LTV_calculation.ipynb)를 참고해주시기 바랍니다.
 * 채택된 모델을 적용하여 각 유저별 이탈 확률을 구하고 10% 간격으로 묶어 실제 이탈유저의 비율과 LTV를 계산함
   * ARPU는 아래와 같이 계산됨
@@ -455,6 +455,10 @@
 </table>
 
 ---
+
+### **⑦ 결과 및 기대효과**
+* EDA를 통해 CRM 및 퍼포먼스 마케팅에 활용할 수 있는 Agenda 도출
+  <img src = ''>
 
 ## **C. 결과 및 기대효과**
 * Test Precision이 0.74, Test Recall이 0.49인 이탈 유저 분류 모델을 개발하였음
