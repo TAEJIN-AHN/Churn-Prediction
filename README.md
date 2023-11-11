@@ -109,6 +109,7 @@
     <p>적어도 5,000명 이상이 사용하는 결제 수단 중 38번의 이탈율이 40%에 달하여 높은 수준에 속함 <br> 이탈율이 높은 결제방식의 경우 파악하지 못한 불편 사항이 없는지 파악하는 CRM 마케팅이 필요함</p>
     <p><img src = 'https://github.com/TAEJIN-AHN/Churn-Prediction/assets/125945387/d4f68fc1-24ae-4ed8-ad8d-120311d25191' width = 80%></p>
 
+* 기타 발견 사항은 아래와 같음
   * 인사이트 관련
     
 <table align = 'center'>
@@ -116,16 +117,8 @@
      <th>데이터 유형</th>
      <th>EDA 내용</th>
  <tr>
-     <td rowspan = '3' valign = 'center' align = 'center'>인적 정보</td>
-     <td>최근에 가입한 유저일 수록 이탈율이 높음</td>
- </tr>
- <tr>
-     <!--<td>인적 정보</td>-->
+     <td rowspan = '1' valign = 'center' align = 'center'>인적 정보</td>
      <td>10대 후반 ~ 20대 초반의 사용자가 타 연령대에 비해 이탈율이 높음</td>
- </tr>
- <tr>
-     <!--<td>인적 정보</td>-->
-     <td>가입 경로에 따라 이탈율에 큰 차이를 보임</td>
  </tr>
  <tr>
      <td rowspan = '2' valign = 'center' align = 'center'>사용 기록</td>
